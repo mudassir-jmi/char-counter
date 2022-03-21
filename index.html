@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mudassir | Char Conunter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Real Time character Counter</h2>
+      <p>
+        Check your English text for grammar, spelling, and punctuation errors
+        with Mudassir real time char counter.
+      </p>
+
+      <textarea
+        id="textarea"
+        class="textarea"
+        placeholder="please write something!"
+        maxlength="150"
+      ></textarea>
+
+      <button onclick="copyText()">Copy Text</button>
+
+      <div class="counter-container">
+        <p>Total character: <span id="total-conter"> 0</span></p>
+        <p>
+          Remaining:
+          <span class="remaining-counter" id="remaining-counter">150</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
